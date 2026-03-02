@@ -1,170 +1,209 @@
-Java Script
-    Java Script is a scripting or programming language that allows you to implement complex faetures on web pages
-    It brings interactivity to the web pages
+<h1>Java Script</h1>
 
-1. Variables
-    Variables are the containers for storing data values
-    var, const and let are the reserved keywords to declare a variable 
-    JavaScript identifiers are case-sensitve.
-    You can assign a value to a variable using equal to (=) operator when you declare it or before using it.
-    ![alt text](image-1.png)
+Java Script is a scripting or programming language that allows you to implement complex faetures on web pages
 
-    const and let also support global scope but unlike var they does not create a property on global object
-    e.g: 
-        var x = "global"
-        let y = "global";
-        console.log(this.x); // "global"
-        console.log(this.y); // undefined
+It brings interactivity to the web pages.
 
-    let variables can be updated but not re-declared
-    const variables can neither be updated not re-declared
+<h2>1. Variables</h2>
 
-2. Data types in JS
+Variables are the containers for storing data values.
+
+var, const and let are the reserved keywords to declare a variable.
+
+JavaScript identifiers are case-sensitve.
+
+You can assign a value to a variable using equal to (=) operator when you declare it or before using it.
+
+![alt text](image-1.png)
+
+const and let also support global scope but unlike var they does not create a property on global object.
+
+    e.g:
+    var x = "global"
+    let y = "global";
+    console.log(this.x); // "global"
+    console.log(this.y); // undefined
+
+let variables can be updated but not re-declared.
+
+const variables can neither be updated not re-declared.
+
+<h2> 2. Data types in JS </h2>
     There are 8 basic data types in JavaScript
-    number
-    string
-    boolean
-    bigInt // if the number is appended with n at end its bigInt
-    undefined
-    null // when we check the type we will get object but its a mistake in JS and fixing it would break the internet
-    object
-    Symbol // var sym = Symbol("id")
-    Rest all types are Objects in some form
+    <ul>
+    <li>number</li>
+    <li>string</li>
+    <li>boolean</li>
+    <li>bigInt // if the number is appended with n at end its bigInt</li>
+    <li>undefined</li>
+    <li>null // when we check the type we will get object but its mistake in JS and fixing it would break the internet</li>
+    <li>object</li>
+    <li>Symbol // var sym = Symbol("id")</li>
+    </ul>
+    Rest all types are Objects in some form.
 
-3. Null vs Undefined
-    ![alt text](image-2.png)
+<h2>3. Null vs Undefined</h2>
+
+![alt text](image-2.png)
 
 Equality Comparison
-    == This operator does value comparison.
-    === This operator does value plus data type comparsion.
+<li>== This operator does value comparison.</li>
+<li>=== This operator does value plus data type comparsion.</li>
 
-4. Spread Operator
-    The operator's shape is three consecutive dots and is written as: ...
-    usages of spread operator 
+<h2>4. Spread Operator</h2>
 
-    Expanding String -  Convert string into list of array 
-    Combining Arrays - Combine array or add value to array
-    Combining Object - Combine Object or add value to object
-    Creating New Shallow Copy of Arrays and objects 
+The operator's shape is three consecutive dots and is written as: ...
 
-5. Destructuring
-    The two most used data structures in JavaScript are Object and Array
+<b>Usages of spread operator : </b>
 
-    Destructuring is a special syntax that allows us to "unpack" arrays or objects into a bunch of variables, as sometimes that's more convenient.
+<li><b>Expanding String</b> -  Convert string into list of array </li>
+<li><b>Combining Arrays</b> - Combine array or add value to array</li>
+<li><b>Combining Object</b> - Combine Object or add value to object</li>
+<li>Creating New Shallow Copy of Arrays and objects </li>
+<h2>5. Destructuring</h2>
 
-    Array destructuring
-    Object destructuring
+The two most used data structures in JavaScript are Object and Array.
 
-6. String Interpolation
-    String interpolatoin allows you to embed expressions in the string 
-    Template string use back-ticks(``) rather than the singel or double-quotes.
+Destructuring is a special syntax that allows us to "unpack" arrays or objects into a bunch of variables, as sometimes that's more convenient.
 
-7. String Methods
-    Java Script provides Many metodes to play with strigns. Below are the some of the most commonly used strings method in LWC
-        1. includes()
-        2. indexOf()
-        3. startsWith()
-        4. slice()
-        5. toLowerCase()
-        6. toUpperCase()
-        7. trim()
+<li>Array destructuring</li>
+<li>Object destructuring</li>
 
-8. Object/ JSON Operations
-    1. Object.keys()
-    2. Object.values()
-    3. JSON.stringify()
-    4. JSON.parse()
+<h2>6. String Interpolation</h2>
 
-9. Array Methods
-    1. map() - loop over the array and return new array based on the value return.
-    2. every() - return true or false if every element in the array satisfy the condition.
-    3. filter() - return new array with all the elemnts that satisfy the condition
-    4. some() - return true if at least one element in the array satisfy.
-    5. sort() - sort the elements of an array
-    6. reduce() - This method reduces the array to a singel value (left to right)
-    7. forEach() - This method calls for each array element.
+String interpolatoin allows you to embed expressions in the string.
 
-10. Promise
-    Promise is an object that may produce a single value sometime in the future
-    Promise are used to handle asynchronous operations in JavaScript.
+Template string use back-ticks(``) rather than the singel or double-quotes.
 
-    A promise has 3 states
+<h2>7. String Methods</h2>
+
+Java Script provides Many metodes to play with strigns. Below are the some of the most commonly used strings method in LWC.
+
+<ol>
+    <li>includes()</li>
+    <li>indexOf()</li>
+    <li>startsWith()</li>
+    <li>slice()</li>
+    <li>toLowerCase()</li>
+    <li>toUpperCase()</li>
+    <li>trim()</li>
+</ol>
+
+<h2>8. Object/ JSON Operations</h2>
+<ol>
+    <li>Object.keys()</li>
+    <li>Object.values()</li>
+    <li>JSON.stringify()</li>
+    <li>JSON.parse()</li>
+</ol>
+
+<h2>9. Array Methods</h2>
+<ol>
+    <li><b>map()</b> - loop over the array and return new array based on the value return.</li>
+    <li><b>every()</b> - return true or false if every element in the array satisfy the condition.</li>
+    <li><b>filter()</b> - return new array with all the elemnts that satisfy the condition</li>
+    <li><b>some()</b> - return true if at least one element in the array satisfy.</li>
+    <li><b>sort()</b> - sort the elements of an array</li>
+    <li><b>reduce()</b> - This method reduces the array to a singel value (left to right)</li>
+    <li><b>forEach()</b> - This method calls for each array element.</li>
+</ol>
+
+<h2>10. Promise</h2>
+
+Promise is an object that may produce a single value sometime in the future.
+
+Promise are used to handle asynchronous operations in JavaScript.
+
+<b>A promise has 3 states:</b>
     ![alt text](image-3.png)
+<ol>
+<li>pending()</li>
+<li>fulfilled()</li>
+<li>rejected()</li>
+</ol>
 
-    1. pending()
-    2. fulfilled()
-    3. rejected()
+Use case from LWC point of view
+<ul>
+    <li>Ferching data from server</li>
+    <li>Loading file from system</li>
+</ul>
 
-    Use case from LWC point of view
-    1. Ferching data from server
-    2. Loading file from system
+<h2>11. Modules Import & Export</h2>
 
-11. Modules Import & Export
+<h3>Exports: </h3>
 
-    Exports
-        Exporting - Use export keyword to export many variable or many method from a file 
-        e.g 1: export const name = 'vineeth'
-        e.g 2: export function getName(){
-            return 'vineeth'
-        }
+<b>Exporting</b> - Use export keyword to export many variable or many method from a file
 
-        Default export - Use export default keyword to export only one variable or a method from a file
-        e.g: export default user = 'salesforce'
+    e.g 1: export const name = 'vineeth'
 
-    Imports
-        Importing - use import keyword to import variable or method from a given file path or module.
+    e.g 2: export function getName(){
+    return 'vineeth'
+    }
 
-        Multiple imports : import {name, getName} from "./filepath"
+<b>Default export</b> - Use export default keyword to export only one variable or a method from a file
 
-        Imports all exported members : import * as Utils from "./filepath"
+    e.g: export default user = 'salesforce'
 
-        Imports a module with a default member: import user from "./filepath"
+<h3>Imports:</h3>
 
-12. Query Selector
+<b>Importing</b> - use import keyword to import variable or method from a given file path or module.
 
-    querySelector - The querySelector() method returns the first element that matches a specified CSS selector(s) in the docment.
-    e.g: document.querySelector(selector);
+    Multiple imports : `import {name, getName} from "./filepath"`
 
-    querySelectorAll - The querySelectorAll() method returns all element in the docuent that matches a specified CSS selector(s) as a static NodeList object.
+    Imports all exported members : import * as Utils from "./filepath"
+
+    Imports a module with a default member: import user from "./filepath"
+
+<h2>12. Query Selector</h2>
+
+<b>querySelector</b> - The querySelector() method returns the first element that matches a specified CSS selector(s) in the docment.
+
+    e.g: document.queySelector(selector);
+
+<b>querySelectorAll</b> - The querySelectorAll() method returns all element in the docuent that matches a specified CSS selector(s) as a static NodeList object.
+
     e.g: document.querySelectorAll(selector);
 
-             
-13. Event
-    An event is an action that occurs int he web browser, which the web browser feedbacks to you so that youcan respond to it.
+<h2>13. Event</h2>
 
-    For example, when users click a button on a webpage, youmay want to respond to this click event by displaying a alert box.
+An event is an action that occurs in the web browser, which the web browser feedbacks to you so that you can respond to it.
 
-    Event handler - It is a block of code that will execute when the event occurs. It is also known as an event listener.
+For example, when users click a button on a webpage, you may want to respond to this click event by displaying a alert box.
 
-    Two common ways to add events
-        1. HTML Event Handler attribute - When we add event through HTML, Event always begin with on keyword like onclick, onchange, onkeyup.
+<b>Event handler</b> - It is a block of code that will execute when the event occurs. It is also known as an event listener.
 
-        2. Event Listener - Event Handlers provide two main methods for dealing with the registering/deregistering event listeners:
-            addEventListener() - register an event handler
-            removeEventListener() - remove an event handler
+Two common ways to add events:
 
-    Event Propagation - event propagtion explains the order in which events are recived on the page from the element where the event occurs and propagated through the DOM tree.
+1. <b>HTML Event Handler attribute</b> - When we add event through HTML, Event always begin with on keyword like onclick, onchange, onkeyup.
 
-    There are two main event models
-        1. Event Bubbling - In the event bubbling model, an event starts at the most specific element and then flows upward toward the least specific element (the document or even window)
-        ![alt text](image-4.png)
+2. <b>Event Listener</b> - Event Handlers provide two main methods for dealing with the registering/deregistering event listeners:
+    <ul>
+    <li><b>addEventListener() </b>- register an event handler</li>
+    <li><b>removeEventListener() </b>- remove an event handler</li>
+    </ul>
 
-        2. Event Capturing
+    <b>Event Propagation</b> - event propagtion explains the order in which events are recived on the page from the element where the event occurs and propagated through the DOM tree.
 
+    There are two main event models:
+    1. <b>Event Bubbling</b> - In the event bubbling model, an event starts at the most specific element and then flows upward toward the least specific element (the document or even window)
+    ![alt text](image-4.png)
+
+    2. <b>Event Capturing</b>
     Custom Event
-        In Java Script we can create our own custom event using Custom Event constructor
-        syntax: new customEvent("eventName",{options})
-        e.g : ![alt text](image-5.png)
-    
-14. Arrow Function
-    Arrow functions allow us to write shorter function syntax
-    ![alt text](image-6.png)
+    In Java Script we can create our own custom event using Custom Event constructor
+    syntax: new customEvent("eventName",{options})
+    e.g : ![alt text](image-5.png)
 
-    Benefits of Arrow functions:
-        Arrow syntax automatically binds this to the surrounding code's contex
+<h2>14. Arrow Function</h2>
+Arrow functions allow us to write shorter function syntax
 
-15. setTimeout vs setInterval
+![alt text](image-6.png)
 
-    setTimeout - The setTimeout() is a method of the window object. The setTimeout() sets a timer and executes a callback function after the timer expires
+Benefits of Arrow functions:
+<li>Arrow syntax automatically binds this to the surrounding code's contex</li>
 
-    setInterval - The setInterval() is a method of the window object. The setInterval() repeatedly calls a function with a dealy between each call.
+<h2>15. setTimeout vs setInterval</h2>
+
+<b>setTimeout</b> - The setTimeout() is a method of the window object. The setTimeout() sets a timer and executes a callback function after the timer expires.
+
+<b>setInterval</b> - The setInterval() is a method of the window object. The setInterval() repeatedly calls a function with a dealy between each call.
